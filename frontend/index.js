@@ -3,6 +3,8 @@ const SNAKE1_COLOUR = '#66ff00';
 const SNAKE2_COLOUR = '#04d9ff';
 const FOOD_COLOUR = '#FF0000';
 
+const socket = io('https://polar-oasis-93966.herokuapp.com/');
+
 socket.on('init', handleInit);
 socket.on('gameState', handleGameState);
 socket.on('gameOver', handleGameOver);
